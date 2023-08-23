@@ -6,25 +6,25 @@
 * @counter: line_number
 * Return: no return
 */
+
 void f_push(stack_t **head, unsigned int counter)
 {
-int n;
+	int n;
 
-if (!bus.arg || !is_valid_int(bus.arg))
-{
-fprintf(stderr, "L%d: usage: push integer\n", counter);
-fclose(bus.file);
-free(bus.content);
-free_stack(*head);
-exit(EXIT_FAILURE);
-}
+	if (!bus.arg || !is_valid_int(bus.arg))
+	{
+		fprintf(stderr, "L%d: usage: push integer\n", counter);
+		fclose(bus.file);
+		free(bus.content);
+		free_stack(*head);
+		exit(EXIT_FAILURE);
+	}
+	n = atoi(bus.arg);
 
-n = atoi(bus.arg);
-
-if (bus.lifi == 0)
-addnode(head, n);
-else
-addqueue(head, n);
+	if (bus.lifi == 0)
+		addnode(head, n);
+	else
+		addqueue(head, n);
 }
 
 /**
@@ -32,16 +32,16 @@ addqueue(head, n);
 * @str: string to check
 * Return: 1 if valid, 0 otherwise
 */
+
 int is_valid_int(char *str)
 {
-int i = 0;
+	int i = 0;
 
-if (str[0] == '-')
-i++;
+	if (str[0] == '-')
+		i++;
 
-for (; str[i] != '\0'; i++)
-if (str[i] > '9' || str[i] < '0')
-return (0);
-
-return (1);
+	for (; str[i] != '\0'; i++)
+		if (str[i] > '9' || str[i] < '0')
+			return (0);
+	return (1);
 }
