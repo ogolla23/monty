@@ -38,7 +38,7 @@ typedef struct bus_s
 	char *content;
 	int lifi;
 }  bus_t;
-bus_t bus = {NULL, NULL, NULL, 0};
+extern bus_t bus;
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
