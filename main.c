@@ -1,6 +1,10 @@
 #include "monty.h"
+<<<<<<< HEAD
 
 /*bus_t bus = {NULL, NULL, NULL, 0};*/
+=======
+bus_t bus = {NULL, NULL, NULL, 0};
+>>>>>>> c1ebce1194d7d82239344500ca54530fe4587532
 /**
 * main - monty code interpreter
 * @argc: number of arguments

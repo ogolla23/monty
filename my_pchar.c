@@ -1,24 +1,6 @@
 #include "monty.h"
 
 /**
- * free_stack - frees a stack
- * @head: pointer to the head of the stack
- * Return: no return value
- */
-
-void free_stack(stack_t *head)
-{
-	stack_t *temp;
-
-	while (head)
-	{
-		temp = head;
-		head = head->next;
-		free(temp);
-	}
-}
-
-/**
 * f_pchar - prints the char at the top of the stack,
 * followed by a new line
 * @head: stack head
