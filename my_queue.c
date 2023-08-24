@@ -2,8 +2,8 @@
 /**
 * f_queue - prints the top
 * @head: stack head
-* @counter: line_number
-* Return: no return
+* @counter: line number
+* Return: nothing
 */
 void f_queue(stack_t **head, unsigned int counter)
 {
@@ -13,10 +13,10 @@ bus.lifi = 1;
 }
 
 /**
-* addqueue - add node to the tail stack
-* @n: new_value
+* addqueue - add node at the end of stack
+* @n: new element.
 * @head: head of the stack
-* Return: no return
+* Return: nothing.
 */
 void addqueue(stack_t **head, int n)
 {

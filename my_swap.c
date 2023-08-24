@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
-* f_swap - swaps the top two elements of the stack.
+* f_swap - swaps the first two elements.
 * @head: stack head
-* @counter: line_number
-* Return: no return
+* @counter: line number
+* Return: nothing.
 */
 void f_swap(stack_t **head, unsigned int counter)
 {

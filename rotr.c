@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
-*f_rotr- rotates the stack to the bottom
+*f_rotr- rotates the stack top to bottom
 *@head: stack head
-*@counter: line_number
-*Return: no return
+*@counter: line number
+*Return: nothing.
 */
 void f_rotr(stack_t **head, __attribute__((unused)) unsigned int counter)
 {

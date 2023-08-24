@@ -1,4 +1,10 @@
 #include "monty.h"
+/**
+ * f_pop - removes an element.
+ * @head: stack head
+ * @counter: line numb.
+ * Return: nothing.
+*/
 void f_pop(stack_t **head, unsigned int counter)
 {
 stack_t *temp;
